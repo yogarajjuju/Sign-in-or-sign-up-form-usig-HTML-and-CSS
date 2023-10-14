@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+body{
+    background: url(../img/background.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 320px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    padding: 20px;
+    backdrop-filter: blur(16px);
+}
+.form h2{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #0e3522;
+}
+.inputBox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #0e3522;
+    margin: 30px 0;
+}
+.inputBox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #002512;
+    font-weight: 600;
+    padding: 0 5px;
+}
+.inputBox span{
+    position: absolute;
+    right: 8px;
+    line-height: 50px;
+    font-size: 1rem;
+    color: #abbcb2;
+}
+.inputBox label{
+    position: absolute;
+    top: 50%;left: 3px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #002512;
+    font-weight: 600;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputBox input:focus~label,
+.inputBox input:valid~label{
+    top: -5px;
+}
+.btn{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background: #002512;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    color: #002512;
+    font-weight: 600;
+    font-size: 16px;
+}
+.link a{
+    margin-left: 5px;
+    color: #abbcb2;
+}
